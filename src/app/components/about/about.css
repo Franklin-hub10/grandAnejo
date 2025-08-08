@@ -1,0 +1,22 @@
+:host .about {
+  padding: 4rem 2%;
+}
+
+:host h2 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+:host .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+:host .content img {
+  width: 100%;
+  border-radius: 8px;
+}

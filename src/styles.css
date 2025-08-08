@@ -1,0 +1,25 @@
+/* Reset y variables globales */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap');
+
+:root {
+  --primary-color: #2c2c2c;
+  --secondary-color: #e1b12c;
+  --light-color: #f9f9f9;
+  --dark-color: #1a1a1a;
+  --accent-color: #c0392b;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  line-height: 1.6;
+}

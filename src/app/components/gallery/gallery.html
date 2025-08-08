@@ -1,0 +1,20 @@
+<section class="carousel">
+  <button class="nav prev" (click)="prev()">‹</button>
+
+  <div class="viewport">
+    <div class="slides"
+         [style.transform]="'translateX(-' + (current * 100) + '%)'">
+      <img *ngFor="let img of galleryImages" [src]="img" alt="Imagen de la galería">
+    </div>
+  </div>
+
+  <button class="nav next" (click)="next()">›</button>
+
+  <div class="indicators">
+    <span
+      *ngFor="let img of galleryImages; let i = index"
+      [class.active]="i === current"
+      (click)="goTo(i)">
+    </span>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+:host .contact {
+  padding: 4rem 2%;
+}
+
+:host h2 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+:host .form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+:host input,
+:host textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: var(--font-sans);
+}
+
+:host button {
+  grid-column: span 2;
+  padding: 0.75rem;
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+:host button:hover {
+  background-color: var(--accent-color);
+}

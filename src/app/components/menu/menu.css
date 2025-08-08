@@ -1,0 +1,48 @@
+:host .menu {
+  padding: 4rem 2%;
+}
+
+:host h2 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+:host .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap: 1.5rem;
+}
+
+:host .item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+:host .item img {
+  width: 100%;
+  display: block;
+}
+
+:host .info {
+  padding: 1rem;
+}
+
+:host .info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+:host .info p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+:host .info span {
+  font-weight: 700;
+  color: var(--accent-color);
+}

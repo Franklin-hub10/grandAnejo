@@ -1,0 +1,57 @@
+:host .carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+:host .viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+:host .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+:host img {
+  flex-shrink: 0;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Navegación */
+:host .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+:host .nav.prev { left: 10px; }
+:host .nav.next { right: 10px; }
+
+/* Indicadores */
+:host .indicators {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+:host .indicators span {
+  display: inline-block;
+  width: 10px; height: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+:host .indicators span.active {
+  background: var(--secondary-color);
+}

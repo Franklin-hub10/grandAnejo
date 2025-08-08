@@ -1,0 +1,13 @@
+<section class="menu">
+  <h2>Nuestro Menú</h2>
+  <div class="items">
+    <div class="item" *ngFor="let dish of dishes">
+      <img [src]="dish.image" [alt]="dish.name">
+      <div class="info">
+        <h3>{{ dish.name }}</h3>
+        <p>{{ dish.description }}</p>
+        <span>{{ dish.price | currency:'USD' }}</span>
+      </div>
+    </div>
+  </div>
+</section>
